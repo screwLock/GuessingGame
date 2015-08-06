@@ -23,6 +23,22 @@ var guessesLeft = 10;
 //determine if the game was won (0==not yet, 1==won)
 var gameWon = 0;
 
+//variables for the timer
+var timeLeft=15; 
+var countdown = document.querySelector("timer");
+setInterval(function(){
+	if(timeLeft === 0)
+	{
+		timer.innerHTML = "Out of Time!!!"
+		stopPlay();
+		return;
+	}
+	timer.innerHTML = timeLeft--;
+	}
+	, 1000); //1000ms = 1s
+
+
+
 //sounds
 var winSound = new Audio('win.mp3');
 var lossSound = new Audio('loss.mp3');
