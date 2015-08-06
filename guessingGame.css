@@ -1,0 +1,46 @@
+body{
+
+	font-family: Helvetica, "Avant Garde", san-serif;
+
+}
+
+#gameTitle{
+
+	text-align: center;
+
+}
+
+button {
+
+	font-family: Helvetica, "Avant Garde", san-serif;
+	font-size: 100%;
+	color: #FFF;
+	padding: .8em .8em;
+	border: 1em;
+	cursor: pointer;
+	background-color: #C44CFF;
+	box-shadow:  .15em .15em .05em rgba(0,0,0,0.5);
+	border-radius: .8em;
+}
+
+button:hover {
+
+	box-shadow:  .5em .5em .35em rgba(0,0,0,0.5);
+
+}
+
+button:active{
+
+	background-color: #B044E5;
+	
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	
+
+}
+
+button:focus{
+
+	outline:0; 
+
+}
