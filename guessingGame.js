@@ -23,6 +23,10 @@ var guessesLeft = 10;
 //determine if the game was won (0==not yet, 1==won)
 var gameWon = 0;
 
+//sounds
+var winSound = new Audio('win.mp3');
+var lossSound = new Audio('loss.mp3');
+
 //variables for the timer
 var timeLeft=15; 
 var countdown = document.querySelector("timer");
@@ -31,17 +35,12 @@ setInterval(function(){
 	{
 		timer.innerHTML = "Out of Time!!!"
 		stopPlay();
+		lossSound.play();
 		return;
 	}
 	timer.innerHTML = timeLeft--;
 	}
 	, 1000); //1000ms = 1s
-
-
-
-//sounds
-var winSound = new Audio('win.mp3');
-var lossSound = new Audio('loss.mp3');
 
 //change mouse cursor image to finger pointing
 button.style.cursor = "pointer";
@@ -140,6 +139,7 @@ function stopPlay()
 	//disable the guess button
 	button.removeEventListener("click", clickHandler, false);
 	button.disabled = true;
+	button.style.
 	
 	//disable the enter keyCode
 	window.removeEventListener("keydown", keyDownHandler, false);
