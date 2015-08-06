@@ -1,7 +1,8 @@
 body{
 
 	font-family: Helvetica, "Avant Garde", san-serif;
-
+	background-color: #28CC7B;
+	
 }
 
 #gameTitle{
@@ -18,9 +19,11 @@ button {
 	padding: .8em .8em;
 	border: 1em;
 	cursor: pointer;
-	background-color: #C44CFF;
 	box-shadow:  .15em .15em .05em rgba(0,0,0,0.5);
 	border-radius: .8em;
+	
+	background: -webkit-linear-gradient(top,#C44CFF, #000);
+	background: -moz-linear-gradient(top, #C44CFF, #000);
 }
 
 button:hover {
@@ -31,7 +34,7 @@ button:hover {
 
 button:active{
 
-	background-color: #B044E5;
+	background: -webkit-linear-gradient(top, #9D3DCC, #000);
 	
 	-webkit-user-select: none;
 	-moz-user-select: none;
